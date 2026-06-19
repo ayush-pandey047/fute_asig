@@ -10,19 +10,19 @@ form.addEventListener('submit', (e) => {
     const unitType = document.getElementById('unitType').value;
 
     if (!name || name === ''){
-        formMsg.innerHTML = 'Please enter your name.';
+        formMsg.innerHTML = 'Please enter your name';
         return
     }
     if (!email || email === ''){
-        formMsg.innerHTML = 'Please enter your email.';
+        formMsg.innerHTML = 'Please enter your email';
         return
     }
     if (!phone || phone === ''){
-        formMsg.innerHTML = 'Please enter your phone number.';
+        formMsg.innerHTML = 'Please enter your phone number';
         return
     }
     if (!unitType || unitType === ''){
-        formMsg.innerHTML = 'Please select a unit type.';
+        formMsg.innerHTML = 'Please select interested unit type';
         return
     }
 
@@ -32,3 +32,15 @@ form.addEventListener('submit', (e) => {
 
 const unitSelect = document.getElementById('unitselect');
 const priceResult = document.getElementById('priceResult');
+
+unitSelect.addEventListener('change', () => {
+    if (unitSelect.value === '75'){
+        priceResult.textContent = 'Price: Rupees 75 Lakh';
+    }
+    else if (unitSelect.value === '95'){
+        priceResult.textContent = 'Price: Rupees 95 Lakh';
+    }
+    else{
+        priceResult.textContent = '';
+    }
+})
