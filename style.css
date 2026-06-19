@@ -37,8 +37,8 @@ body{
 }
 
 section {
-    padding: 25px 20px;
-    max-width: 700px;
+    padding: 25px 10px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -126,4 +126,24 @@ footer {
     padding: 20px;
     background: #222;
     color: white;
+}
+
+body.dark-theme {
+    background: #1a1a1a;
+    color: #f1f1f1;
+}
+
+body.dark-theme .amenities li,
+body.dark-theme .image-placeholder {
+  background: #2c2c2c;
+  color: #f1f1f1;
+}
+
+@media (max-width: 480px) {
+    .site-header h1 {
+      font-size: 22px;
+    }
+    .add-amenity {
+      flex-direction: column;
+    }
 }
