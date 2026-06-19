@@ -1,0 +1,34 @@
+const form = document.querySelector('enquiry-form');
+const msg = document.querySelector('formMsg');
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const unitType = document.getElementById('unitType').value;
+
+    if (!name || name === ''){
+        formMsg.innerHTML = 'Please enter your name.';
+        return
+    }
+    if (!email || email === ''){
+        formMsg.innerHTML = 'Please enter your email.';
+        return
+    }
+    if (!phone || phone === ''){
+        formMsg.innerHTML = 'Please enter your phone number.';
+        return
+    }
+    if (!unitType || unitType === ''){
+        formMsg.innerHTML = 'Please select a unit type.';
+        return
+    }
+
+    forMsg.textContent = 'Thank You! Our Sales team will contact you soon.';
+    form.reset();
+})
+
+const unitSelect = document.getElementById('unitselect');
+const priceResult = document.getElementById('priceResult');
