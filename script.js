@@ -49,3 +49,18 @@ const themeBtn = document.getElementById('themeBtn');
 themeBtn.addEventListener('click', () => {
     document.body.classList.toggle('dark-theme');
 })
+
+const addAmenityBtn = document.getElementById('addAmenityBtn');
+const newanemityInput = document.getElementById('newamenity');
+const amenitiesList = document.getElementById('amenitiesList');
+
+addAmenityBtn.addEventListener('click', () => {
+    const value = newanemityInput.value.trim();
+    if (value !== '') {
+        const li = document.createElement('li');
+        li.textContent = value;
+        amenitiesList.appendChild(li);
+        newanemityInput.value = '';
+    }
+})
+
