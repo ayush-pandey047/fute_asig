@@ -29,8 +29,58 @@
 </section>
 
 <section class="description">
-
+    <h2>About the Project</h2>
+    <p>Green Valley Residency is a premium residential project located in Whitefield, Bangalore. The project offers thoughtfully designed 2 BHK and 3 BHK homes with modern amenities, landscaped gardens, and excellent connectivity to IT parks, schools, hospitals, and shopping zones.</p>
 </section>
+
+<section class="amenities">
+    <h2>Amenities</h2>
+    <ul>
+        <li>Swimming Pool</li>
+        <li>Clubhouse</li>
+        <li>Gym</li>
+        <li>Children's Play Area</li>
+        <li>Landscaped Garden</li>
+        <li>24/7 Security</li>
+        <li>Parking</li>
+        <li>Jogging Track</li>
+    </ul>
+    <div class="add-amenity">
+        <input type="text" id="nnewAmenity" placeholder="Add new amenity">
+        <button id="addAmenityBtn">Add Amenity</button>
+    </div>
+</section>
+
+<section class="price-calculator">
+    <h2>Price Calculator</h2>
+    <select id="unitselect">
+        <option value="">Select Unit Type</option>
+        <option value="75">2Bhk</option>
+        <option value="95">3Bhk</option>
+    </select>
+    <p id="priceResult"></p>
+</section>
+
+<section class="enquiryForm">
+    <h2>Enquiry Form</h2>
+    <form id="enquiryForm">
+        <input type="text" id="name" name="name" placeholder="Full Name" required>
+        <input type="email" id="email" name="email" placeholder="Email Address" required>
+        <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+        <select id="unit-type">
+            <option value="">Select Unit Type</option>
+            <option value="75">2Bhk</option>
+            <option value="95">3Bhk</option>
+        </select> 
+        <textarea id="message" name="message" placeholder="Your Message" rows="4"></textarea>
+        <button type="submit">Submit</button>
+        <p id="formMsg"></p>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2026 Green Valley Residency</p>
+</footer>
 
 </body>
 </html>
