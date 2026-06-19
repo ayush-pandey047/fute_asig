@@ -57,4 +57,26 @@ h2 {
     font-size: 18px;
     border-radius: 8px;
 }
-  
+
+.project-details ul, .amenities ul {
+    list-style: none;
+}
+
+.project-details li {
+    padding: 6px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.amenities li {
+    background: white;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.add-amenity {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+}
