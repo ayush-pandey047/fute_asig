@@ -1,5 +1,5 @@
-const form = document.querySelector('enquiry-form');
-const msg = document.querySelector('formMsg');
+const form = document.getElementById('enquiryForm');
+const msg = document.getElementById('formMsg');
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -10,27 +10,27 @@ form.addEventListener('submit', (e) => {
     const unitType = document.getElementById('unitType').value;
 
     if (!name || name === ''){
-        formMsg.innerHTML = 'Please enter your name';
+        msg.innerHTML = 'Please enter your name';
         return
     }
     if (!email || email === ''){
-        formMsg.innerHTML = 'Please enter your email';
+        msg.innerHTML = 'Please enter your email';
         return
     }
     if (!phone || phone === ''){
-        formMsg.innerHTML = 'Please enter your phone number';
+        msg.innerHTML = 'Please enter your phone number';
         return
     }
     if (!unitType || unitType === ''){
-        formMsg.innerHTML = 'Please select interested unit type';
+        msg.innerHTML = 'Please select interested unit type';
         return
     }
 
-    forMsg.textContent = 'Thank You! Our Sales team will contact you soon.';
+    formMsg.textContent = 'Thank You! Our Sales team will contact you soon.';
     form.reset();
 })
 
-const unitSelect = document.getElementById('unitselect');
+const unitSelect = document.getElementById('unitSelect');
 const priceResult = document.getElementById('priceResult');
 
 unitSelect.addEventListener('change', () => {
@@ -51,7 +51,7 @@ themeBtn.addEventListener('click', () => {
 })
 
 const addAmenityBtn = document.getElementById('addAmenityBtn');
-const newanemityInput = document.getElementById('newamenity');
+const newanemityInput = document.getElementById('newAmenity');
 const amenitiesList = document.getElementById('amenitiesList');
 
 addAmenityBtn.addEventListener('click', () => {

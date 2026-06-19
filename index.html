@@ -35,7 +35,7 @@
 
 <section class="amenities">
     <h2>Amenities</h2>
-    <ul>
+    <ul id="amenitiesList">
         <li>Swimming Pool</li>
         <li>Clubhouse</li>
         <li>Gym</li>
@@ -46,14 +46,14 @@
         <li>Jogging Track</li>
     </ul>
     <div class="add-amenity">
-        <input type="text" id="nnewAmenity" placeholder="Add new amenity">
+        <input type="text" id="newAmenity" placeholder="Add new amenity">
         <button id="addAmenityBtn">Add Amenity</button>
     </div>
 </section>
 
 <section class="price-calculator">
     <h2>Price Calculator</h2>
-    <select id="unitselect">
+    <select id="unitSelect">
         <option value="">Select Unit Type</option>
         <option value="75">2Bhk</option>
         <option value="95">3Bhk</option>
@@ -64,10 +64,10 @@
 <section class="enquiry-form">
     <h2>Enquiry Form</h2>
     <form id="enquiryForm">
-        <input type="text" id="name" name="name" placeholder="Full Name" required>
-        <input type="email" id="email" name="email" placeholder="Email Address" required>
-        <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
-        <select id="unit-type">
+        <input type="text" id="name" name="name" placeholder="Full Name" >
+        <input type="email" id="email" name="email" placeholder="Email Address" >
+        <input type="tel" id="phone" name="phone" placeholder="Phone Number" >
+        <select id="unitType">
             <option value="">Select Unit Type</option>
             <option value="75">2Bhk</option>
             <option value="95">3Bhk</option>
